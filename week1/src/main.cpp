@@ -80,6 +80,10 @@ int main() {
 	// Take the power of the passed variables
 	cout << number << " to the power of " << power << " is " << pow(number,power) << endl;
 
+	string name; // Strings are a combination of one or multiple chars, basically arrays of chars
+	cout << "Your name please:" << endl; // Requests your name
+	cin >> name; // Pass your name to variable
+	cout << "Your name is " << name << endl;
 	// If you cannot see your results in terminal just add this
 	// getchar();
 
