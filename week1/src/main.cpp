@@ -21,7 +21,7 @@ int main() {
 	// Equivalent to cout << "Hello World" << endl; as we use namespace std
 	std::cout << "Hello World" << std::endl;
 	// Let's get used to variables
-	int myInteger = 1; // I am an integer, I am 16bit and signed so I can be between -2^15-1 and 2^15
+	int myInteger = 1; // I am an integer, I am 32bit and signed so I can be between -2^31-1 and 2^31
 	float myFloat = 1.41241; // I am float, I can store up to 7 decimals
 	double myDouble = 1.4124132213; // I am double, I can store up to 15 decimals
 	cout << "The value of myInteger is " << myInteger << endl;
