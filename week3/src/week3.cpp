@@ -15,6 +15,8 @@ int main() {
 	// Funtion Prototypes
 	int sum(int firstNumber, int secondNumber);
 	void printVector(vector<int> vectorToPrint, int size);
+	int countToZero(int number);
+	int factorial(int number);
 	// Defines an empty array with 5 integer size
 	int myArray[100];
 	// Defines an array with 10,20,30 elements
@@ -115,6 +117,9 @@ int main() {
 	cout << "Sum of " << number1 << " and " << number2 << " is " << sum(number1, number2) << endl;
 
 	printVector(intVector, vectorSize);
+	countToZero(200);
+
+	cout << factorial(10) << endl;
 	return 0;
 
 }
@@ -133,4 +138,31 @@ void printVector(vector<int> vectorToPrint, int size)
 		cout << vectorToPrint.at(i) << endl;
 	}
 	cout << "-----------------------" << endl;
+}
+
+// We can call the function in itself
+int countToZero(int number)
+{
+	if (number == 0)
+	{
+		return 0;
+	}
+	else
+	{
+	cout << number-1 << endl;
+	return (countToZero(number-1));
+	}
+}
+
+int factorial(int number)
+{
+	if(number == 0 || number == 1)
+	{
+		return 1;
+	}
+	else
+	{
+		return number*factorial(number-1);
+	}
+
 }
